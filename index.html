@@ -1,8 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
 <title>Frontiers in Supersymmetric Theories</title>
 <style>
   :root {
@@ -19,12 +15,14 @@
     --mono: "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
     color-scheme: light;
     --logo-light: block; --logo-dark: none;
+    --name: #000000;
   }
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --paper: #131928; --paper-2: #1B2234; --ink: #E8EAF1; --ink-2: #C3C8D6;
       --muted: #8C94AB; --rule: #2E3750; --accent: #E2685F; --accent-ink: #131928;
       --logo-light: none; --logo-dark: block;
+      --name: #FFFFFF;
       color-scheme: dark;
     }
   }
@@ -32,6 +30,7 @@
     --paper: #131928; --paper-2: #1B2234; --ink: #E8EAF1; --ink-2: #C3C8D6;
     --muted: #8C94AB; --rule: #2E3750; --accent: #E2685F; --accent-ink: #131928;
     --logo-light: none; --logo-dark: block;
+    --name: #FFFFFF;
     color-scheme: dark;
   }
 
@@ -95,7 +94,7 @@
   }
   .meta { display: flex; justify-content: space-between; align-items: flex-end; gap: 16px 32px; flex-wrap: wrap; font-size: 16px; line-height: 1.55; color: var(--ink-2); margin-bottom: 26px; }
   .meta-left { display: flex; flex-direction: column; gap: 6px; }
-  .meta-right { font-family: var(--serif); font-size: 18px; letter-spacing: 0.02em; color: #FFFFFF; white-space: nowrap; }
+  .meta-right { font-family: var(--serif); font-size: 18px; letter-spacing: 0.02em; color: #FFFFFF; white-space: nowrap; position: relative; top: 34px; }
   .meta b { color: var(--ink); font-weight: 600; }
   .algebra {
     --math: "STIX Two Math", "Latin Modern Math", "Cambria Math", "Times New Roman", "Songti SC", serif;
@@ -124,12 +123,13 @@
   h3 { font-family: var(--sans); font-size: 13px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); font-weight: 600; margin: 36px 0 12px; }
   p { max-width: 64ch; margin: 0 0 16px; }
   .lede { font-size: 18px; color: var(--ink-2); max-width: 60ch; }
-  .two { display: grid; grid-template-columns: 1.4fr 1fr; gap: 48px; align-items: start; }
+  .two { display: grid; grid-template-columns: 2.2fr 1fr; gap: 56px; align-items: start; }
   @media (max-width: 720px) { .two { grid-template-columns: 1fr; gap: 24px; } }
 
   .list { list-style: none; padding: 0; margin: 0; }
   .list li { padding: 10px 0; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 1fr auto; gap: 16px; }
   .list li span:last-child { color: var(--muted); font-size: 14px; white-space: nowrap; }
+  .list li span:only-child { color: var(--name); font-size: 16px; white-space: normal; }
   .tbd { color: var(--muted); font-style: italic; }
   ul.topics { margin: 0 0 16px; padding-left: 1.3em; max-width: 64ch; }
   ul.topics li { margin: 6px 0; }
@@ -197,8 +197,7 @@
   footer .text { text-align: right; line-height: 1.5; }
   @media (max-width: 600px) { footer .text { text-align: left; } }
 </style>
-</head>
-<body>
+
 
 <header class="top">
   <div class="wrap">
@@ -212,7 +211,6 @@
       <a href="#schedule" data-tab="schedule">Schedule</a>
       <a href="#program" data-tab="program">Program</a>
       <a href="#registration" data-tab="registration">Registration</a>
-      <a href="#participants" data-tab="participants">Participation List</a>
       <a href="#location" data-tab="location">Location</a>
     </nav>
   </div>
@@ -252,21 +250,19 @@
           <li>Supergravity and precision holography</li>
           <li>Superstring theory and M-theory</li>
         </ul>
-        <div class="notice">Speaker list, schedule and registration details will be posted here as they are confirmed.</div>
         <h3>Invited speakers</h3>
-        <ul class="list">
-          <li><span class="tbd">To be announced</span><span></span></li>
-        </ul>
+        <ul class="list"><li><span>Sergio Benvenuti</span></li><li><span>Matthew Buican</span></li><li><span>Amihay Hanany</span></li><li><span>Chiung Hwang</span></li><li><span>Patrick Jefferson</span></li><li><span>Seok Kim</span></li><li><span>Kimyeong Lee</span></li><li><span>Alberto Lerda</span></li><li><span>Noppadol Mekareeya</span></li><li><span>Marcus Sperling</span></li><li><span>Gabriele Tartaglino-Mazzucchelli</span></li><li><span>Arkady Tseytlin</span></li><li><span>Yinan Wang</span></li><li><span>Congkao Wen</span></li><li><span>Dan Xie</span></li><li><span>Wenbin Yan</span></li><li><span>Yutaka Yoshida</span></li><li><span>Gabi Zafrir</span></li></ul>
+        <div style="height:64px" aria-hidden="true"></div>
       </div>
       <div>
         <h3 style="margin-top:0">Organisers</h3>
         <ul class="list">
-          <li><span>Hongliang Jiang</span><span>SIMIS and Fudan</span></li>
-          <li><span>Zhihao Duan</span><span>SIMIS</span></li>
-          <li><span>Zhenghao Zhong</span><span>SIMIS</span></li>
+          <li><span>Hongliang Jiang</span></li>
+          <li><span>Zhihao Duan</span></li>
+          <li><span>Zhenghao Zhong</span></li>
         </ul>
         <h3>Contact</h3>
-        <p><a href="mailto:FIST2027@simis.cn">FIST2027@simis.cn</a></p>
+        <p><a href="mailto:FIST@simis.cn">FIST@simis.cn</a></p>
       </div>
     </div>
   </section>
@@ -275,7 +271,6 @@
   <section id="schedule" class="panel">
     <h2>Schedule</h2>
     <p class="lede">Monday 11 – Friday 15 January 2027. All talks in the 18F Auditorium at SIMIS. Times are China Standard Time (UTC+8).</p>
-    <div class="notice">Provisional schedule: four one-hour talks a day, two in the morning and two in the afternoon, with Wednesday afternoon free. Titles and speakers will replace the placeholders as the program is finalised.</div>
 
     <div class="prog-wrap">
       <table class="prog">
@@ -328,31 +323,31 @@
             <td class="brk">Lunch</td>
           </tr>
           <tr>
-            <td class="t">14:00</td>
+            <td class="t">14:30</td>
             <td>Talk 3 <span class="who">TBA</span></td>
             <td>Talk 7 <span class="who">TBA</span></td>
-            <td class="brk" rowspan="4">Free afternoon + excursion</td>
+            <td class="brk" rowspan="4">Exciting Excursion</td>
             <td>Talk 13 <span class="who">TBA</span></td>
             <td>Talk 17 <span class="who">TBA</span></td>
           </tr>
           <tr>
-            <td class="t">15:00</td>
+            <td class="t">15:30</td>
             <td class="brk">Coffee</td>
             <td class="brk">Coffee</td>
             <td class="brk">Coffee</td>
             <td class="brk">Coffee</td>
           </tr>
           <tr>
-            <td class="t">15:30</td>
+            <td class="t">16:00</td>
             <td>Talk 4 <span class="who">TBA</span></td>
             <td>Talk 8 <span class="who">TBA</span></td>
             <td>Talk 14 <span class="who">TBA</span></td>
             <td>Talk 18 <span class="who">TBA</span></td>
           </tr>
           <tr>
-            <td class="t">18:30</td>
+            <td class="t"></td>
             <td></td>
-            <td>Conference dinner (by invitation) <span class="who">venue TBA</span></td>
+            <td>Conference dinner (by invitation) <span class="who">18:00</span></td>
             <td></td>
             <td></td>
           </tr>
@@ -381,7 +376,7 @@
     <p style="text-align:center;max-width:none;margin:28px 0 8px"><a class="btn" href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__61dLIhUM1RWRjJWRVJKSTZCMDhQRkhJVEg0S1pNNi4u&amp;route=shorturl" target="_blank" rel="noopener">Register here</a></p>
 
     <h3>What is covered</h3>
-    <p><b>There is no registration fee.</b> Coffee breaks, lunches and the conference dinner on Tuesday are provided. Accommodation and travel are at participants' own expense; no financial support is available.</p>
+    <p><b>There is no registration fee.</b> Coffee breaks are provided. Accommodation and travel are at participants' own expense; no financial support is available.</p>
 
     <h3>Visas</h3>
     <p>Many nationalities can now enter China visa-free for short stays; check the current policy for your passport. If you need an invitation letter for a visa application, request one on the registration form and we will issue it within a week.</p>
@@ -391,12 +386,6 @@
 
     <h3>Payments</h3>
     <p>Almost everything in Shanghai, from taxis and the metro to restaurants and convenience stores, is paid with Alipay or WeChat Pay, which is more convenient than cash or card. Both apps accept an international Visa or Mastercard: install the app before you travel, add your card under the payment settings, and you can scan and pay everywhere. Alipay is the smoother of the two for foreign cards. Vendors must accept cash, but many places will struggle to give change, and foreign bank cards work at ATMs but only rarely at the till.</p>
-  </section>
-
-  <!-- ============ PARTICIPANTS ============ -->
-  <section id="participants" class="panel">
-    <h2>Participation List</h2>
-    <p class="lede tbd">To be announced.</p>
   </section>
 
   <!-- ============ LOCATION ============ -->
@@ -705,8 +694,10 @@
         draw: function (r, t) {
           var cx = r.width * 0.74, cy0 = r.height * 0.5, sc = Math.min(r.width, r.height) * 0.19;
           var rh = 1.0;                                    // horizon radius (units of sc)
-          var dt = last === null ? 0 : Math.min(0.05, t - last); last = t;
+          var dt = (last === null || t < last) ? 0.016 : Math.min(0.05, t - last); last = t;
           if (streams.length < 26 && Math.random() < 0.35) streams.push(spawn(t));
+          // seed a few streams at various radii when the scene (re)starts, so it never opens empty
+          if (t < 0.05 && streams.length < 12) { for (var q0 = 0; q0 < 10; q0++) { var st0 = spawn(t); st0.r = 1.05 + Math.random() * 1.3; streams.push(st0); } }
           // lensed background: a polar grid of dots, bent by the mass (Einstein-ring style deflection)
           ctx.save();
           for (var i = 0; i < 14; i++) {
@@ -741,7 +732,7 @@
               ctx.lineWidth = 1.2 + 1.6 * fade;
               ctx.beginPath(); ctx.moveTo(a0[0], a0[1]); ctx.lineTo(a1[0], a1[1]); ctx.stroke();
             }
-            if (st.r <= rh + 0.03) streams.splice(s, 1);
+            if (st.r <= rh + 0.03 || st.r > 3.2) streams.splice(s, 1);
           }
           // the hole: dark disc with a soft edge, then the photon ring
           var g = ctx.createRadialGradient(cx, cy0, rh * sc * 0.6, cx, cy0, rh * sc * 1.25);
@@ -799,5 +790,5 @@
     window.addEventListener('resize', function () { if (reduce) requestAnimationFrame(draw); });
   })();
 </script>
-</body>
-</html>
+
+</body></html>
